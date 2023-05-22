@@ -3,7 +3,7 @@ Generare numero casuale tra 1 e 100 COMPRESI. Continuare a chiedere all'utente d
 Ogni volta che sbaglia stampiamo in console un messaggio che gli/le dice se il numero da indovinare è maggiore o minore.
 Una volta che ha indovinato, stampiamo in console il numero di tentativi totali.*/
 
-let randomNumber = Math.floor(Math.random() * (101 - 1) + 1);
+/*let randomNumber = Math.floor(Math.random() * (101 - 1) + 1);
 
 console.log(randomNumber);
 
@@ -26,4 +26,25 @@ while (userNumber != randomNumber){
     i++;
 }
 
-console.log('Tentativi: ' +i);
+console.log('Tentativi: ' +i); */
+
+
+
+/* calcola la somma e la media dei primi 10 numeri*/
+
+let sum = 0;
+let media = 0;
+
+for (let i = 1; i < 11; i++){
+    sum += i;
+    media = sum / 10;
+}
+
+console.log(media);
+
+
+
+
+
+
+
