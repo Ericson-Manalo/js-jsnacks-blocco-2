@@ -32,7 +32,7 @@ console.log('Tentativi: ' +i); */
 
 /* calcola la somma e la media dei primi 10 numeri*/
 
-let sum = 0;
+/*let sum = 0;
 let media = 0;
 
 for (let i = 1; i < 11; i++){
@@ -40,9 +40,51 @@ for (let i = 1; i < 11; i++){
     media = sum / 10;
 }
 
-console.log(media);
+console.log(media); */
+
+/*Dare la possibilità di inserire due parole.
+Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
+Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.*/
 
 
+
+let wordA = prompt ('Inserisci una parola');
+let wordB = prompt ('Inserisci una second parola');
+
+sameWordLength (wordA, wordB)
+
+function sameWordLength (firstWord, secondWord){
+    if (firstWord.length == secondWord.length){
+        console.log('Sono lunghe uguali');                                  //NON SI UTILIZZANO MAI VARIABILI GLOBALI DENTRO LA FUNCTION
+    } else if (firstWord.length > secondWord.length){
+        console.log('la prima è la più lunga');
+    } else{
+        console.log('la seconda parola è la più lunga');
+    }
+}
+
+
+/*************** Riccardo's solution **************/
+
+
+/*const parolaUno = prompt ('Inserisci la prima parola');
+const parolaDue = prompt ('Inserisci la seconda parola');
+
+if ( areWordsLongTheSame (firstWord, secondWord)){
+    console.log('Sono lunghe uguali');
+} else if (parolaUno.length > parolaDue.length){
+    console.log('la prima è la più lunga');
+
+}else{
+    console.log('la seconda parola è la più lunga');
+}
+
+function areWordsLongTheSame (firstWord, secondWord){
+    if ( firstWord.length === secondWord.length){
+        return true;
+    }
+    return false;
+}*/
 
 
 
